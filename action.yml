@@ -1,0 +1,11 @@
+name: 'glob'
+description: 'Glob for Github Action'
+author: 'Rhio Kim'
+inputs:
+  glob:
+    required: true
+    description: 'glob pattern'
+    default: '**/*.json'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

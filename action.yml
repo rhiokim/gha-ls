@@ -1,0 +1,15 @@
+name: 'Glob in Github Action'
+description: 'Provide a description here'
+author: 'rhiokim'
+inputs:
+  # root:
+  #   required: true
+  #   description: 'input description here'
+  #   default: '.'
+  glob:
+    required: true
+    description: 'input description here'
+    default: '**/*.json'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
